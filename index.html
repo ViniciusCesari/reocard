@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reocard Chile - Soporte natural para el bienestar cardiovascular y equilibrio del organismo.">
+    <title>Reocard Chile | Bienestar Cardiovascular Natural</title>
+    <style>
+        :root {
+            --primary-blue: #102a43;
+            --accent-blue: #243b53;
+            --gold-action: #d97706;
+            --light-bg: #f0f4f8;
+            --text-main: #334e68;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        
+        body { background-color: var(--white); color: var(--text-main); line-height: 1.6; }
+        .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+
+        /* Botão CTA Profissional */
+        .cta-main {
+            display: inline-block;
+            background: var(--gold-action);
+            color: white;
+            padding: 22px 45px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .cta-main:hover { background: #b45309; transform: translateY(-2px); }
+
+        /* Header e Hero */
+        header { background: var(--primary-blue); padding: 15px 0; color: white; text-align: center; }
+        
+        .hero { padding: 80px 0; background: linear-gradient(to right, #f8fafc, #e2e8f0); }
+        .hero-flex { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px; }
+        .hero-text { flex: 1; min-width: 300px; }
+        .hero-text h1 { color: var(--primary-blue); font-size: 2.8rem; line-height: 1.1; margin-bottom: 20px; }
+        
+        .price-tag {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid var(--gold-action);
+            text-align: center;
+        }
+        
+        /* Estilo da Imagem do Produto */
+        .product-img {
+            width: 100%;
+            max-width: 220px;
+            height: auto;
+            border-radius: 8px;
+            margin: 0 auto 20px auto;
+            display: block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .old-p { text-decoration: line-through; color: #94a3b8; font-size: 1.2rem; }
+        .new-p { color: var(--primary-blue); font-size: 3.5rem; font-weight: 900; display: block; }
+
+        /* Seções de Conteúdo */
+        .section-title { text-align: center; font-size: 2rem; color: var(--primary-blue); margin-bottom: 40px; }
+        .section-padding { padding: 80px 0; }
+        
+        /* Benefícios (Imagens 3 e 4) */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .feature-card { background: var(--light-bg); padding: 30px; border-radius: 8px; border-left: 4px solid var(--primary-blue); }
+        .feature-card h3 { margin-bottom: 15px; color: var(--primary-blue); }
+
+        /* Ingredientes (Imagem 1) */
+        .ing-section { background: var(--primary-blue); color: white; }
+        .ing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; text-align: center; }
+        .ing-item h4 { font-size: 1.5rem; color: #fbbf24; margin: 15px 0; }
+
+        /* Segurança (Imagem 2) */
+        .safety-grid { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px; text-align: center; }
+        .safety-item { flex: 1; min-width: 250px; background: white; padding: 25px; border: 1px solid #e2e8f0; border-radius: 10px; }
+
+        /* Processo (Imagem 5) */
+        .process-steps { display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 50px; gap: 20px; }
+        .step { flex: 1; min-width: 200px; text-align: center; }
+        .step-circle { width: 60px; height: 60px; background: var(--gold-action); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-weight: bold; font-size: 1.5rem; }
+
+        footer { background: #0f172a; color: #94a3b8; padding: 60px 0; text-align: center; font-size: 0.85rem; }
+        .footer-links a { color: #cbd5e1; text-decoration: none; margin: 0 10px; border-bottom: 1px solid #475569; }
+
+        @media (max-width: 768px) {
+            .hero-text h1 { font-size: 2rem; }
+            .hero-flex { text-align: center; }
+            .cta-main { width: 100%; padding: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <strong>OFERTA EXCLUSIVA PARA CHILE: 50% DE DESCUENTO</strong>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-flex">
+            <div class="hero-text">
+                <h1>Fórmula Natural para el Equilibrio y Vitalidad</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 30px;">Descubra el poder de los extractos botánicos seleccionados para apoyar su bienestar cardiovascular de forma integral y segura.</p>
+                <div class="safety-grid" style="justify-content: flex-start; margin-top: 20px;">
+                    <span style="font-weight: bold;">✔ Sin Químicos</span>
+                    <span style="font-weight: bold;">✔ 100% Natural</span>
+                    <span style="font-weight: bold;">✔ Sin Adicción</span>
+                </div>
+            </div>
+
+            <div class="price-tag">
+                <img src="reocard.png" alt="Suplemento Reocard" class="product-img">
+                
+                <p>Precio con descuento:</p>
+                <span class="old-p">69.800 CLP</span>
+                <span class="new-p">34.900 CLP</span>
+                <p style="color: #059669; font-weight: bold; margin-bottom: 20px;">Paga al recibir en casa</p>
+                <a href="https://l8n33.doctorzakaria.com/l" class="cta-main">PEDIR MI REOCARD</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">¿Por qué Reocard es diferente?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Apoyo al Organismo</h3>
+                    <p>Contribuye positivamente al bienestar general en pocos minutos, ofreciendo una sensación de alivio y equilibrio.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Efecto Prolongado</h3>
+                    <p>Su fórmula avanzada está diseñada para una liberación gradual que apoya sus funciones vitales durante todo el día.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Protección Integral</h3>
+                    <p>Ayuda a proteger el sistema circulatorio contra las sobrecargas del día a día y mejora la respuesta del sistema nervioso.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Soporte Metabólico</h3>
+                    <p>Regula y apoya las funciones naturales del sistema digestivo, inmune y la salud del organismo en general.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding ing-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Ingredientes Puros de la Naturaleza</h2>
+            <div class="ing-grid">
+                <div class="ing-item">
+                    <h4>Algas</h4>
+                    <p>Ricas en nutrientes que ayudan significativamente a mejorar la condición de los líquidos corporales y el bienestar renal.</p>
+                </div>
+                <div class="ing-item">
+                    <h4>Ácido Fólico</h4>
+                    <p>Esencial para el proceso de construcción de proteínas y el mantenimiento saludable de las células sanguíneas.</p>
+                </div>
+                <div class="ing-item">
+                    <h4>Ajo</h4>
+                    <p>Un aliado milenario que contribuye a la salud de las arterias y ayuda a mantener niveles saludables de colesterol.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Compromiso con la Calidad</h2>
+            <div class="safety-grid">
+                <div class="safety-item">
+                    <strong style="color: var(--primary-blue);">SIN SINTÉTICOS</strong>
+                    <p>No contiene químicos, hormonas, conservantes ni organismos modificados (OMG).</p>
+                </div>
+                <div class="safety-item">
+                    <strong style="color: var(--primary-blue);">SEGURIDAD TOTAL</strong>
+                    <p>Fórmula diseñada para ser segura, sin provocar trastornos en el desarrollo del organismo.</p>
+                </div>
+                <div class="safety-item">
+                    <strong style="color: var(--primary-blue);">NATURAL</strong>
+                    <p>Sin riesgo de adicción o dependencia, incluso con el uso prolongado del tratamiento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--light-bg);">
+        <div class="container">
+            <h2 class="section-title">Cómo obtener Reocard en Chile</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-circle">1</div>
+                    <strong>SOLICITUD</strong>
+                    <p>Complete el formulario de pedido en nuestro sitio.</p>
+                </div>
+                <div class="step">
+                    <div class="step-circle">2</div>
+                    <strong>CONFIRMACIÓN</strong>
+                    <p>Un especialista le llamará para confirmar sus datos.</p>
+                </div>
+                <div class="step">
+                    <div class="step-circle">3</div>
+                    <strong>ENVÍO</strong>
+                    <p>Enviamos su pedido a cualquier región de Chile rápidamente.</p>
+                </div>
+                <div class="step">
+                    <div class="step-circle">4</div>
+                    <strong>PAGO</strong>
+                    <p>Usted paga en efectivo solo cuando recibe el producto.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="https://l8n33.doctorzakaria.com/l" class="cta-main">QUIERO EMPEZAR HOY</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+                <a href="#">Contacto</a>
+            </div>
+            <br>
+            <p><strong>Aviso Legal:</strong> Este producto es un suplemento alimenticio natural. No es un medicamento. No pretende diagnosticar, tratar, curar o prevenir ninguna enfermedad. Los resultados pueden variar de persona a persona. Siempre consulte a su médico antes de iniciar cualquier suplemento.</p>
+            <p style="margin-top: 20px;">&copy; 2026 Reocard Chile. Calidad Garantizada.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
